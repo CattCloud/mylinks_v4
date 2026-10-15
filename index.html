@@ -1,54 +1,164 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyLinks - Tu Nombre</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
+  <body>
+    <title>MyLinks · Erick Dreyk</title>
+    <meta name="claude:viewport-fit-sides" content="cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
 
-<body>
+    <div class="squares" aria-hidden="true">
+      <span class="sq sq--top"></span>
+      <span class="sq sq--right"></span>
+      <span class="sq sq--mid"></span>
+      <span class="sq sq--bottom"></span>
+      <span class="sq sq--a"></span>
+      <span class="sq sq--b"></span>
+    </div>
 
-    <main class="card">
+    <main class="page">
+      <section class="profile">
+        <!-- Reemplaza el <span> por <img src="tu-foto.jpg" alt="Erick Dreyk"> -->
+        <div class="avatar" role="img" aria-label="Erick Dreyk">
+          <span>ED</span>
+        </div>
 
-        <!-- FOTO DE PERFIL -->
-        <!-- Cambia "Tu Nombre" en el atributo alt -->
-        <img class="avatar" src="https://placehold.co/100x100/6c63ff/ffffff?text=YO" alt="Foto de Tu Nombre" width="100"
-            height="100" />
+        <div class="intro">
+          <p class="bio">
+            Soy Erick Dreyk, desarrollador Full Stack e instructor en Enter Tech
+            School. Mira mi
+            <a
+              href="https://devfolio-puce-three.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              >portfolio</a
+            >, mi
+            <a
+              href="https://github.com/CattCloud"
+              target="_blank"
+              rel="noopener"
+              >código</a
+            >
+            o
+            <a href="https://wa.me/51989431173" target="_blank" rel="noopener"
+              >escríbeme</a
+            >.
+          </p>
 
-        <!-- NOMBRE Y BIO -->
-        <!-- Reemplaza el texto con tu información -->
-        <h1 class="name">Erick Dreyk</h1>
-        <p class="bio">Soy desarrollador full stack , me apasiona la IA y la automatización</p>
+          <ul class="contact">
+            <li>
+              <a
+                href="https://wa.me/51989431173"
+                target="_blank"
+                rel="noopener"
+                aria-label="Chatear por WhatsApp"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-4.5 3.6A.6.6 0 0 1 4.5 20v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+51989431173" aria-label="Llamar al +51 989 431 173">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <rect x="6.5" y="2.5" width="11" height="19" rx="2.5" />
+                  <path d="M10.5 5.5h3" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:[EMAIL_ADDRESS]" aria-label="Enviar correo">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v.3l-9 5.6-9-5.6v-.3Zm0 2.6 8.5 5.3a1 1 0 0 0 1 0L21 9.1v8.4a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5V9.1Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-
-        <!-- ENLACES -->
-        <!-- Cambia el href y el texto de cada enlace -->
-        <!-- Puedes agregar o quitar enlaces según necesites como FACEBOOK,WHATTSAP,etc cualquier medio de contacto -->
-        <nav class="links">
-
-            <a href="https://github.com/tu-usuario" class="link" target="_blank">
-                GitHub
-            </a>
-
-            <a href="mailto:tu@email.com" class="link">
-                Email
-            </a>
-
-
-
-        </nav>
-
+      <ul class="links">
+        <li>
+          <a href="https://github.com/CattCloud" target="_blank" rel="noopener">
+            GitHub
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.56 9.56 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://devfolio-puce-three.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            Portfolio
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="7" width="18" height="13" rx="2" />
+              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+              <path d="M3 13h18" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/51989431173" target="_blank" rel="noopener">
+            WhatsApp
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12.04 2a9.9 9.9 0 0 0-8.5 14.98L2 22l5.16-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.07.89.9-2.98-.2-.31a8.2 8.2 0 1 1 6.85 3.73Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.96-.14.17-.29.19-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04c0 1.2.88 2.37 1 2.53.12.17 1.73 2.64 4.2 3.7 1.56.68 2.17.73 2.95.62.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:[EMAIL_ADDRESS]">
+            Correo
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3.5 6.5 8.5 6 8.5-6" />
+            </svg>
+          </a>
+        </li>
+      </ul>
     </main>
-
-</body>
-
+  </body>
 </html>
